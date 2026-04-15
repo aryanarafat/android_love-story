@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:id="@+id/Favorite_Main_leyout"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/Favorite_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+                <LinearLayout
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+                    <ImageView
+                        android:id="@+id/Favorite_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_favourite_unselect" />
+
+                    <LinearLayout
+                        android:id="@+id/linear_header_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:id="@+id/Favorite_Titeltextview"
+                            android:text="Favorite"
+                            android:gravity="center"
+                            android:textSize="18sp"
+                            android:textStyle="normal"
+                            android:textColor="@color/primary_text_color"
+                            />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:id="@+id/Favorite_sub_Titeltextview"
+                            android:text="Your favorite content"
+                            android:textStyle="normal"
+                            android:textColor="@color/primary_text_color"
+                            />
+
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                    </LinearLayout>
+
+
+
+                    <ImageView
+                        android:id="@+id/favorite_all_delete_imageview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:scaleType="center"
+                        android:src="@drawable/delete_grey" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/fav_rv"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</LinearLayout>

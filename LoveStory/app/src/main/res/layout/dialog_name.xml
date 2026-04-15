@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dialog_layout_root"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FEFEFE"
+    android:orientation="vertical"
+    android:paddingRight="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingBottom="10dp">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solaimanlipi"
+        android:text="আপনি কি অ্যাপসটি বন্ধ করতে চান?"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:padding="5dp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/solaimanlipi"
+        android:padding="5dp"
+        android:lineSpacingExtra="2dp"
+        android:text="অ্যাপসটি আপনার নিকট ভালো লাগলে অবশ্যই\nকৃতজ্ঞতা স্বরূপ একটি  ৫ ষ্টার রেটিং দিবেন ,কারণ \nএটি আমাকে অ্যাপসটির আপডেট ও আরো নতুন \nঅ্যাপস তৈরিতে উৎসাহ করে থাকে। ।"
+        android:textColor="@android:color/black"
+        android:textSize="16sp"
+        android:textStyle="normal" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/solaimanlipi"
+            android:text="৫✰ স্টার দিব"
+            android:textColor="#18593B"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="না!"
+            android:gravity="center"
+            android:textColor="#18593B"
+            android:textSize="15sp"
+            android:fontFamily="@font/solaimanlipi"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/textView5"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="10dp"
+            android:text="হ্যাঁ!"
+            android:gravity="right"
+            android:textColor="#18593B"
+            android:textSize="15sp"
+            android:fontFamily="@font/solaimanlipi"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:ignore="MissingConstraints" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

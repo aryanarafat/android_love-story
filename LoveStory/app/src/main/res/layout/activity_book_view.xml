@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/linear1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e0e0e0"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linear3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linear_actionbar"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:background="#ffffff"
+                android:orientation="vertical"
+                android:padding="2dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:gravity="center_vertical"
+                    android:layout_height="match_parent">
+
+
+                    <ImageView
+                        android:id="@+id/imageview1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_chevron_left_grey" />
+
+
+                    <TextView
+                        android:id="@+id/main_titel_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Category Titel"
+                        android:gravity="left"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/fonts"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:visibility="gone"
+                    android:id="@+id/linear2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="2dp">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/linear_header_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:padding="2dp">
+
+
+
+                        <TextView
+                            android:id="@+id/textview2"
+                            android:fontFamily="@font/solaimanlipi"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:visibility="gone"
+                            android:textColor="#000000"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/linear_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:visibility="gone"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+
+                        <EditText
+                            android:id="@+id/edittext_search"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#eeeeee"
+                            android:gravity="center"
+                            android:hint="সার্চ করতে এখানে লিখুন..."
+                            android:imeOptions="actionSearch"
+                            android:lines="1"
+                            android:fontFamily="@font/solaimanlipi"
+                            android:padding="2dp"
+                            android:textColor="#212121"
+                            android:textColorHint="#607d8b"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/imageview_search"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:visibility="gone"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_search_grey" />
+
+                    <ImageView
+                        android:id="@+id/imageview_search_can"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="8dp"
+                        android:visibility="gone"
+                        android:scaleType="center"
+                        android:src="@drawable/ic_close_grey" />
+
+                    <LinearLayout
+                        android:layout_weight="1"
+                        android:layout_width="match_parent"
+                        android:gravity="right"
+                        android:layout_gravity="center_vertical"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imageview2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="8dp"
+                            android:scaleType="center"
+                            android:src="@drawable/baseline_share_grey" />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/listview1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="none"
+                android:divider="@null"
+                android:dividerHeight="0dp"
+                android:padding="5dp" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>
